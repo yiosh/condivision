@@ -34,8 +34,9 @@ $(document).ready(function () {
             $('.page').toggleClass('active-sm');
         }
     });
-    // Show menu on swipe if mobile
-    if ($(window).outerWidth() < 600) {
+
+    // Show sidebar on swipe if mobile
+    if ($(window).outerWidth() < 1025) {
         $(document).swipe({
             // e.preventDefault();
             swipe: function (event, direction, distance, duration, fingerCount, fingerData) {

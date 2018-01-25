@@ -1,1 +1,16 @@
 /* your styles go here */
+#toggle-btn {
+    display: inline-block;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    #toggle-btn {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #toggle-btn {
+        display: none;
+    }
+}
