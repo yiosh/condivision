@@ -20,8 +20,7 @@ $(document).ready(function () {
         },
         data: {
             labels: ["Jan", "Feb", "Mar", "Apr", "May", "June", "July"],
-            datasets: [
-                {
+            datasets: [{
                     label: "My First dataset",
                     fill: true,
                     lineTension: 0.3,
@@ -84,21 +83,20 @@ $(document).ready(function () {
                 "Second",
                 "Third"
             ],
-            datasets: [
-                {
-                    data: [300, 50, 100],
-                    borderWidth: [1, 1, 1],
-                    backgroundColor: [
-                        brandPrimary,
-                        "rgba(75,192,192,1)",
-                        "#FFCE56"
-                    ],
-                    hoverBackgroundColor: [
-                        brandPrimary,
-                        "rgba(75,192,192,1)",
-                        "#FFCE56"
-                    ]
-                }]
+            datasets: [{
+                data: [300, 50, 100],
+                borderWidth: [1, 1, 1],
+                backgroundColor: [
+                    brandPrimary,
+                    "rgba(75,192,192,1)",
+                    "#FFCE56"
+                ],
+                hoverBackgroundColor: [
+                    brandPrimary,
+                    "rgba(75,192,192,1)",
+                    "#FFCE56"
+                ]
+            }]
         }
     });
 

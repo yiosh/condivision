@@ -5,19 +5,18 @@ $(document).ready(function () {
 
     var brandPrimary = 'rgba(51, 179, 90, 1)';
 
-    var LINECHARTEXMPLE   = $('#lineChartExample'),
-        PIECHARTEXMPLE    = $('#pieChartExample'),
-        BARCHARTEXMPLE    = $('#barChartExample'),
-        RADARCHARTEXMPLE  = $('#radarChartExample'),
-        POLARCHARTEXMPLE  = $('#polarChartExample');
+    var LINECHARTEXMPLE = $('#lineChartExample'),
+        PIECHARTEXMPLE = $('#pieChartExample'),
+        BARCHARTEXMPLE = $('#barChartExample'),
+        RADARCHARTEXMPLE = $('#radarChartExample'),
+        POLARCHARTEXMPLE = $('#polarChartExample');
 
 
     var lineChartExample = new Chart(LINECHARTEXMPLE, {
         type: 'line',
         data: {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-                {
+            datasets: [{
                     label: "Data Set One",
                     fill: true,
                     lineTension: 0.3,
@@ -75,22 +74,21 @@ $(document).ready(function () {
                 "Second",
                 "Third"
             ],
-            datasets: [
-                {
-                    data: [300, 50, 100],
-                    borderWidth: [1, 1, 1],
-                    backgroundColor: [
-                        brandPrimary,
-                        "rgba(75,192,192,1)",
-                        "#FFCE56"
-                    ],
-                    hoverBackgroundColor: [
-                        brandPrimary,
-                        "rgba(75,192,192,1)",
-                        "#FFCE56"
-                    ]
-                }]
-            }
+            datasets: [{
+                data: [300, 50, 100],
+                borderWidth: [1, 1, 1],
+                backgroundColor: [
+                    brandPrimary,
+                    "rgba(75,192,192,1)",
+                    "#FFCE56"
+                ],
+                hoverBackgroundColor: [
+                    brandPrimary,
+                    "rgba(75,192,192,1)",
+                    "#FFCE56"
+                ]
+            }]
+        }
     });
 
     var pieChartExample = {
@@ -101,8 +99,7 @@ $(document).ready(function () {
         type: 'bar',
         data: {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
-            datasets: [
-                {
+            datasets: [{
                     label: "Data Set 1",
                     backgroundColor: [
                         'rgba(51, 179, 90, 0.6)',
@@ -187,8 +184,7 @@ $(document).ready(function () {
         type: 'radar',
         data: {
             labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling"],
-            datasets: [
-                {
+            datasets: [{
                     label: "My First dataset",
                     backgroundColor: "rgba(179,181,198,0.2)",
                     borderWidth: 2,

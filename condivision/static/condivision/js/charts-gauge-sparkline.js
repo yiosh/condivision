@@ -76,10 +76,10 @@ $(function () {
     $.fn.sparkline.defaults.common.spotColor = '#e95f71';
     $.fn.sparkline.defaults.common.minSpotColor = '#e95f71';
     $.fn.sparkline.defaults.common.maxSpotColor = '#e95f71';
-    $.fn.sparkline.defaults.bar.barColor = '#864dd9'; 
-    $.fn.sparkline.defaults.bar.stackedBarColor = ['#864dd9', '#CF53F9', '#e95f71']; 
+    $.fn.sparkline.defaults.bar.barColor = '#864dd9';
+    $.fn.sparkline.defaults.bar.stackedBarColor = ['#864dd9', '#CF53F9', '#e95f71'];
     $.fn.sparkline.defaults.box.boxFillColor = '#ad91d8';
-    $.fn.sparkline.defaults.pie.sliceColors = ['#864dd9', '#CF53F9', '#e95f71'];  
+    $.fn.sparkline.defaults.pie.sliceColors = ['#864dd9', '#CF53F9', '#e95f71'];
 
     // Sparklines - Init
 

@@ -3,8 +3,7 @@ $(function () {
         responsive: {
             details: false
         }
-    }
-    );
+    });
 
     $(document).on('sidebarChanged', function () {
         dataTable.columns.adjust();
@@ -13,4 +12,3 @@ $(function () {
     });
 
 });
-
