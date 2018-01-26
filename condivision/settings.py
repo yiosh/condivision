@@ -25,7 +25,7 @@ SECRET_KEY = 'skz$66%!ywd5o^h%)@8^#ib(%xwdma(#1vxmm6p96chyja4r%x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["company.com",'localhost']
 
 
 # Application definition
@@ -37,10 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'banqueting',
+    'django_hosts',
+    'banqueting'
 ]
 
 MIDDLEWARE = [
+    'django_hosts.middleware.HostsRequestMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -48,10 +50,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_hosts.middleware.HostsResponseMiddleware'
 ]
 
 ROOT_URLCONF = 'condivision.urls'
-
+ROOT_HOSTCONF = 'condivision.hosts'
+DEFAULT_HOST = '127.0.0.1'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -71,11 +75,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'condivision.wsgi.application'
 
 
+
+
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {}
+    'default': {
+        'NAME': '',
+        'ENGINE': ''
+    }
 }
 
 

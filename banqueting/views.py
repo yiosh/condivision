@@ -5,7 +5,7 @@ from django.template import loader
 
 def index(request):
     context = {}
-    return render(request, 'banqueting/index.html', context)
+    return render(request, 'index.html', context)
 
 
 def modulo(request):
