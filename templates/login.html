@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+
+<head>
+  <!-- #condivision template/inc/head.py   (object from static/) -->
+  {% include "inc/head.html" %}
+</head>
+<body>
+  <div class="page login-page">
+    <div class="container">
+      <div class="form-outer text-center d-flex align-items-center">
+        <div class="form-inner">
+          <div class="logo text-uppercase"><span>Bootstrap</span><strong class="text-primary">Dashboard</strong></div>
+          {% if msg != '' %}
+          <span style="color:red;font-weight:bold">{{msg}}</span>
+          {% endif %}
+          <form id="login-form" method="post" action="">
+            {% csrf_token %}
+            <div class="form-group-material">
+              <input id="login-username" type="text" name="username" required class="input-material">
+              <label for="login-username" class="label-material">Username</label>
+            </div>
+            <div class="form-group-material">
+              <input id="login-password" type="password" name="password" required class="input-material">
+              <label for="login-password" class="label-material">Password</label>
+            </div><input type="submit" class="btn btn-primary" value="Login">
+            <!-- This should be submit button but I replaced it with <a> for demo purposes-->
+          </form>
+        </div>
+        <div class="copyrights text-center">
+          <p>Design by <a href="#" class="external">Your company</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "inc/footer.html" %}
+</body>
+</html>

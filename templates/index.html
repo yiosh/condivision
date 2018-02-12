@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+
+<head>
+  <!-- #condivision template/inc/head.py   (object from static/) -->
+  {% include "inc/head.html" %}
+</head>
+<body>
+
+  <!-- template/inc/nav.py   (object from static/) -->
+  {% include "inc/nav.html" %}
+  <div class="page">
+    <!-- #condivision template/inc/header.py   (object from static/) -->
+    {% include "inc/header.html" %}
+
+    <div id="content">{% block content %} {% endblock content %} </div><!-- #content close -->
+  </div><!-- page close -->
+
+  {% block estensione %}{% endblock estensione %}
+
+  <!-- #condivision template/inc/footer.py   (object from static/) -->
+  {% include "inc/footer.html" %}
+</body>
+</html>
