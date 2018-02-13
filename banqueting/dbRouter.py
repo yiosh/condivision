@@ -3,6 +3,7 @@ class BanquetingRouter:
     A router to control all database operations on models in the
     banqueting application.
     """
+
     def db_for_read(self, model, **hints):
         """
         Attempts to read banqueting models go to banqueting_db.
@@ -25,7 +26,7 @@ class BanquetingRouter:
         """
         if obj1._meta.app_label == 'banqueting' or \
            obj2._meta.app_label == 'banqueting':
-           return True
+            return True
         return None
 
     def allow_migrate(self, db, app_label, model_name=None, **hints):

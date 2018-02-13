@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class CcAccount(models.Model):
     nickname = models.CharField(max_length=45, blank=True, null=True)
     email = models.CharField(max_length=255, blank=True, null=True)
