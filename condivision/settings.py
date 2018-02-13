@@ -93,7 +93,7 @@ DATABASES = {
 'HOST': 'localhost',
 'PORT': '',},
 
-'banqueting': {
+'banqueting_db': {
 'ENGINE': 'django.db.backends.postgresql_psycopg2',
 'NAME': 'cc_condivision1',
 'USER': 'postgres',
